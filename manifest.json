@@ -1,0 +1,28 @@
+{
+   "background": {
+      "persistant": false,
+      "scripts": [ "js/lib/jquery.min.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon48.png",
+      "default_title": "Kimono"
+   },
+   "content_scripts": [ {
+      "js": [ "detector.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Turn websites into structured APIs from your browser in seconds",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "256": "icon256.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqf5qTBav+x3MjcIkTu2eKyQdRvlxEIyTy46Tc6xXqq9dt+9w2sxFHMX/11f2M36C29VMBAz9TEAy2XTBUGXCdaH94+/tDk75z4MnyzFZ6b0QrTLHG4rUAFGaLm1ERKkTdVyz/qwa2tVuGWI5a0L3fwMEsXngnArLApJscpPoyvG7LcdCsKkNafctx0NT4677KIoBeWrdaA7TdnHh6tqb7IEYXjD1a9ILx0KKS5rKUUdH7jtf8s7lH8h16j87zrFU8I9f1/9ENTf1O5aB8HhuvodlCYhIbNs1E6wfAKFr5lkkXA4XmYWt3tCi6aPgs1kxVhcGTGmR/TAP558qphMa5wIDAQAB",
+   "manifest_version": 2,
+   "name": "kimono",
+   "permissions": [ "tabs", "notifications", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.12",
+   "web_accessible_resources": [ "*", "img/*", "js/lib/*.js", "js/*.js", "css/*.css", "fonts/*" ]
+}
